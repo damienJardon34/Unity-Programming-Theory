@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class Vehicle : MonoBehaviour
 {
-    [SerializeField] float _speed = 10f;
-    [SerializeField] float _reverseSpeed = 10f;
-    [SerializeField] float _turnSpeed = 100f;
+    [SerializeField] private float _speed = 10f;
+    [SerializeField] private float _reverseSpeed = 10f;
+    [SerializeField] private float _turnSpeed = 100f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
