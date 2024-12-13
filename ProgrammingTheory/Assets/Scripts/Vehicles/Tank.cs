@@ -3,12 +3,12 @@ using UnityEngine;
 public class Tank : Vehicle
 {
     // Update is called once per frame
-    void Update()
+    new void Update()
     {
         float direction = Input.GetAxis("Horizontal");
         float accelerator = Input.GetAxis("Vertical");
    
-        Turn((accelerator == 0)? direction * 1.3f : direction);
+        Turn(direction); // can use differential steering to turn on the spot.
 
         if (accelerator > 0)
         {

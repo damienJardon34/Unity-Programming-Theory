@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MainController : MonoBehaviour
 {
-    public static MainController Instance { get; private set; }
+    public static MainController Instance { get; private set; } // ENCAPSULATION
     private void Awake()
     {
         if (Instance == null)

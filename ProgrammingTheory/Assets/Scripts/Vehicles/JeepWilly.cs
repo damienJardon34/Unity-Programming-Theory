@@ -1,15 +1,9 @@
 using UnityEngine;
 
-public class JeepWilly : Vehicle
+public class JeepWilly : Vehicle // INHERITANCE
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
-    void Update()
+    new void Update() // POLYMORHISM
     {
         float direction = Input.GetAxis("Horizontal");
         float accelerator = Input.GetAxis("Vertical");
